@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -80,12 +81,15 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camara) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
+        if (id == R.id.nav_classes) {
+            Intent classes = new Intent(this, Main2Activity.class);
+            startActivity(classes);
+        } else if (id == R.id.nav_chegg) {
+            Intent chegg = new Intent(this, Main2Activity.class);
+            startActivity(chegg);
+        } else if (id == R.id.nav_coursehero) {
+            Intent coursehero = new Intent(this, Main2Activity.class);
+            startActivity(coursehero);
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
