@@ -1,5 +1,6 @@
 package comsgosiaco.github.pockethelp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,9 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.content.Intent;
 
-public class MainActivity extends AppCompatActivity
+public class Chegg extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.chegg, menu);
         return true;
     }
 
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_classes) {
             startActivity(new Intent(this, Classes.class));
         } else if (id == R.id.nav_chegg) {
-            startActivity(new Intent(this, Chegg.class));
+           //Do nothing
         } else if (id == R.id.nav_coursehero) {
             startActivity(new Intent(this, Coursehero.class));
         } else if (id == R.id.nav_manage) {

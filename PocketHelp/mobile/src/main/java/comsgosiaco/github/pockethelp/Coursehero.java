@@ -1,5 +1,6 @@
 package comsgosiaco.github.pockethelp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,15 +13,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.content.Intent;
 
-public class MainActivity extends AppCompatActivity
+public class Coursehero extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_coursehero);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.coursehero, menu);
         return true;
     }
 
@@ -82,11 +82,11 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_classes) {
-            startActivity(new Intent(this, Classes.class));
+           startActivity(new Intent(this, Classes.class));
         } else if (id == R.id.nav_chegg) {
             startActivity(new Intent(this, Chegg.class));
         } else if (id == R.id.nav_coursehero) {
-            startActivity(new Intent(this, Coursehero.class));
+            //Do nothing
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {

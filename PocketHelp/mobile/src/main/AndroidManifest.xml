@@ -23,8 +23,26 @@
             android:label="@string/title_activity_settings" >
         </activity>
         <activity
+            android:name=".Chegg"
+            android:label="@string/title_activity_chegg"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comsgosiaco.github.pockethelp.MainActivity" />
+        </activity>
+        <activity
             android:name=".Classes"
             android:label="@string/title_activity_classes"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comsgosiaco.github.pockethelp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Coursehero"
+            android:label="@string/title_activity_coursehero"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
