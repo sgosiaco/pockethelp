@@ -2,12 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_camara" android:icon="@android:drawable/ic_menu_camera"
-            android:title="Import" />
-        <item android:id="@+id/nav_gallery" android:icon="@android:drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item android:id="@+id/nav_slideshow" android:icon="@android:drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+        <item android:id="@+id/nav_classes" android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Classes" />
+        <item android:id="@+id/nav_chegg" android:icon="@drawable/chegg.jpg"
+            android:title="Chegg" />
+        <item android:id="@+id/nav_coursehero" android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="Course Hero" />
         <item android:id="@+id/nav_manage" android:icon="@android:drawable/ic_menu_manage"
             android:title="Tools" />
     </group>
