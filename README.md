@@ -1,7 +1,7 @@
 # pockethelp
 
 ## Inspiration
-To build an app the combines the Chegg, Course hero and possibly wolfram api into one useful app for students that also has some tools like class time management and GPA calculator.
+To build an app for HackingEDU Hackathon that combines the Chegg, Course hero and possibly Wolfram Alpha APIs into one useful app for students that also has some tools like class time management and GPA calculator.
 ## What it does
 Currently it functionally doesn't do anything due to my lack of experience with REST api calls in java, but the framework for the UI and activities are there.
 ## How I built it
