@@ -88,12 +88,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(this, Chegg.class));
         } else if (id == R.id.nav_coursehero) {
             startActivity(new Intent(this, Coursehero.class));
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_general) {
+            //Do nothing
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

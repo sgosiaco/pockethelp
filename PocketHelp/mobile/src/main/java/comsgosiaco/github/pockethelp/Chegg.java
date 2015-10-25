@@ -14,6 +14,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import retrofit.*;
+import retrofit.Callback;
+import comsgosiaco.github.pockethelp.API.cheggapi;
+import comsgosiaco.github.pockethelp.model.cheggmodel;
+
+
 public class Chegg extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -88,17 +94,12 @@ public class Chegg extends AppCompatActivity
            //Do nothing
         } else if (id == R.id.nav_coursehero) {
             startActivity(new Intent(this, Coursehero.class));
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_general) {
+            startActivity(new Intent(this, MainActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
 }

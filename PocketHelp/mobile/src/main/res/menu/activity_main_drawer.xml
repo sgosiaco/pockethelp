@@ -2,23 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_general" android:icon="@android:drawable/ic_menu_manage"
+            android:title="General" />
         <item android:id="@+id/nav_classes" android:icon="@android:drawable/ic_menu_agenda"
             android:title="Classes" />
         <item android:id="@+id/nav_chegg" android:icon="@drawable/chegg"
             android:title="Chegg" />
         <item android:id="@+id/nav_coursehero" android:icon="@drawable/coursehero"
             android:title="Course Hero" />
-        <item android:id="@+id/nav_manage" android:icon="@android:drawable/ic_menu_manage"
-            android:title="Tools" />
     </group>
-
-    <item android:title="Communicate">
-        <menu>
-            <item android:id="@+id/nav_share" android:icon="@android:drawable/ic_menu_share"
-                android:title="Share" />
-            <item android:id="@+id/nav_send" android:icon="@android:drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
 
 </menu>

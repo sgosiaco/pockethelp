@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+
 public class Classes extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -88,12 +89,8 @@ public class Classes extends AppCompatActivity
             startActivity(new Intent(this, Chegg.class));
         } else if (id == R.id.nav_coursehero) {
             startActivity(new Intent(this, Coursehero.class));
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_general) {
+            startActivity(new Intent(this, MainActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
